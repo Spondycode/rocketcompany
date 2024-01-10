@@ -8,7 +8,7 @@
     <form
       action=""
       method="POST"
-      class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+      class="flex flex-col max-w-4xl gap-4 mx-auto text-2xl sm:text-3xl items-left"
     >
     {% csrf_token %}
       <label for="name">Name</label>
@@ -16,14 +16,14 @@
         type="text"
         name="name"
         id="name"
-        class="border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-2 px-4 rounded-xl shadow-xl"
+        class="px-4 py-2 bg-white border border-solid shadow-xl border-slate-900 dark:border-gray-100 dark:bg-black rounded-xl"
       />
       <label for="email">Email</label>
       <input
         type="email"
         name="email"
         id="email"
-        class="border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-2 px-4 rounded-xl shadow-xl"
+        class="px-4 py-2 bg-white border border-solid shadow-xl border-slate-900 dark:border-gray-100 dark:bg-black rounded-xl"
       />
       <label for="message">Message</label>
       <textarea
@@ -31,11 +31,11 @@
         id="message"
         cols="30"
         rows="10"
-        class="border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-2 px-4 rounded-xl shadow-xl"
+        class="px-4 py-2 bg-white border border-solid shadow-xl border-slate-900 dark:border-gray-100 dark:bg-black rounded-xl"
       ></textarea>
       <button
         type="submit"
-        class="bg-teal-600 dark:bg-blue text-white dark:text-slate-400 py-2 px-4 rounded-3xl shadow-xl"
+        class="px-4 py-2 text-white bg-teal-600 shadow-xl dark:bg-blue dark:text-slate-400 rounded-3xl hover:bg-teal-700 hover:text-white focus:bg-teal-900"
       >
         Submit
       </button>
